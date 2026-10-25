@@ -1,0 +1,122 @@
+.explore-cuisines {
+  width: 90%;
+  margin: 70px auto;
+}
+
+.cuisine-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.cuisine-card {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Cuisine-card-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.cuisine-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.Cuisine-card-inside p {
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===================== Tablet ===================== */
+
+@media (max-width: 768px) {
+  .explore-cuisines {
+    width: 95%;
+    margin: 50px auto;
+  }
+
+  .cuisine-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .cuisine-header p {
+    font-size: 0.95rem;
+  }
+
+  .cuisine-card {
+    margin-top: 20px;
+    justify-content: flex-start;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .cuisine-card::-webkit-scrollbar {
+    display: none;
+  }
+
+  .Cuisine-card-inside {
+    width: 100px;
+    height: 100px;
+    scroll-snap-align: start;
+  }
+
+  .cuisine-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Cuisine-card-inside p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===================== Mobile ===================== */
+
+@media (max-width: 480px) {
+  .explore-cuisines {
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  .cuisine-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .cuisine-header p {
+    font-size: 0.85rem;
+  }
+
+  .cuisine-card {
+    gap: 15px;
+    padding-right: 16px;
+  }
+
+  .Cuisine-card-inside {
+    width: 85px;
+    height: 95px;
+  }
+
+  .cuisine-image {
+    width: 55px;
+    height: 55px;
+  }
+
+  .Cuisine-card-inside p {
+    font-size: 0.8rem;
+  }
+}
