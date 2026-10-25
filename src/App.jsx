@@ -1,5 +1,7 @@
 
 import { Routes, Route, Outlet, useLocation } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+
 
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
@@ -10,6 +12,10 @@ import PopularRecipe from "./Components/PopularRecipe";
 import Footer from "./Components/Footer";
 import RecipeDetails from "./pages/RecipeDetails";
 import SearchPage from "./pages/SearchPage";
+<BrowserRouter basename="/recipe-finder">
+  <App />
+</BrowserRouter>
+
 
 function Layout() {
   const location = useLocation();
